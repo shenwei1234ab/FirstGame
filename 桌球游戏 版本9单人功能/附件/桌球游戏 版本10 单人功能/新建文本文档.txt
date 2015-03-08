@@ -1,0 +1,18 @@
+1.初始化
+RefCountedPtr<Texture> t1(new Texture);
+
+
+RefCountedPtr<Texture> t2(t1);
+
+
+
+2.赋值
+ RefCountedPtr<Texture > tmp(new Texture);
+t1 = tmp;
+
+
+3.做参数
+void SetRef(Texture *p)
+{
+		m_RefPtr  = p;
+}

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Ball.cpp" />
+    <ClCompile Include="..\..\src\BallCollision.cpp" />
+    <ClCompile Include="..\..\src\base\Animation.cpp" />
+    <ClCompile Include="..\..\src\base\AnimationManager.cpp" />
+    <ClCompile Include="..\..\src\base\AnimationPlayer.cpp" />
+    <ClCompile Include="..\..\src\base\CGame.cpp" />
+    <ClCompile Include="..\..\src\base\CNode.cpp" />
+    <ClCompile Include="..\..\src\base\Particle.cpp" />
+    <ClCompile Include="..\..\src\base\ParticleContactCalculate.cpp" />
+    <ClCompile Include="..\..\src\base\Scene.cpp" />
+    <ClCompile Include="..\..\src\base\SceneQuad.cpp" />
+    <ClCompile Include="..\..\src\base\TextureManager.cpp" />
+    <ClCompile Include="..\..\src\base\tinyxml.cpp" />
+    <ClCompile Include="..\..\src\base\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\src\base\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\src\base\UIButton.cpp" />
+    <ClCompile Include="..\..\src\base\UIElement.cpp" />
+    <ClCompile Include="..\..\src\base\UIFactory.cpp" />
+    <ClCompile Include="..\..\src\base\UILabel.cpp" />
+    <ClCompile Include="..\..\src\base\UISystem.cpp" />
+    <ClCompile Include="..\..\src\base\UIWireFrame.cpp" />
+    <ClCompile Include="..\..\src\base\World.cpp" />
+    <ClCompile Include="..\..\src\BorderCollision.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\MyGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Ball.h" />
+    <ClInclude Include="..\..\src\BallArm.h" />
+    <ClInclude Include="..\..\src\BallCollision.h" />
+    <ClInclude Include="..\..\src\base\AABox2.h" />
+    <ClInclude Include="..\..\src\base\Animation.h" />
+    <ClInclude Include="..\..\src\base\AnimationManager.h" />
+    <ClInclude Include="..\..\src\base\AnimationPlayer.h" />
+    <ClInclude Include="..\..\src\base\CGame.h" />
+    <ClInclude Include="..\..\src\base\CNode.h" />
+    <ClInclude Include="..\..\src\base\Gravity.h" />
+    <ClInclude Include="..\..\src\base\IContactGenerator.h" />
+    <ClInclude Include="..\..\src\base\GameObject.h" />
+    <ClInclude Include="..\..\src\base\IForce.h" />
+    <ClInclude Include="..\..\src\base\Matrix3x2.h" />
+    <ClInclude Include="..\..\src\base\Particle.h" />
+    <ClInclude Include="..\..\src\base\ParticleContactCalculate.h" />
+    <ClInclude Include="..\..\src\base\Quad.h" />
+    <ClInclude Include="..\..\src\base\RefCounted.h" />
+    <ClInclude Include="..\..\src\base\Scene.h" />
+    <ClInclude Include="..\..\src\base\SceneQuad.h" />
+    <ClInclude Include="..\..\src\base\stdafx.h" />
+    <ClInclude Include="..\..\src\base\Texture.h" />
+    <ClInclude Include="..\..\src\base\TextureManager.h" />
+    <ClInclude Include="..\..\src\base\tinyxml.h" />
+    <ClInclude Include="..\..\src\base\UIButton.h" />
+    <ClInclude Include="..\..\src\base\UIElement.h" />
+    <ClInclude Include="..\..\src\base\UIFactory.h" />
+    <ClInclude Include="..\..\src\base\UILabel.h" />
+    <ClInclude Include="..\..\src\base\UISystem.h" />
+    <ClInclude Include="..\..\src\base\UIWireFrame.h" />
+    <ClInclude Include="..\..\src\base\Vector2.h" />
+    <ClInclude Include="..\..\src\base\World.h" />
+    <ClInclude Include="..\..\src\BorderCollision.h" />
+    <ClInclude Include="..\..\src\Cube.h" />
+    <ClInclude Include="..\..\src\MyGame.h" />
+    <ClInclude Include="..\..\src\Scene1.h" />
+    <ClInclude Include="..\..\src\Scene2.h" />
+    <ClInclude Include="..\..\src\StartScene.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8A6E141C-A46B-47E3-8FC6-EB90B1AC1E88}</ProjectGuid>
+    <RootNamespace>vs2010</RootNamespace>
+    <ProjectName>版本10</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../bin</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>b2dd.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>b2d.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
